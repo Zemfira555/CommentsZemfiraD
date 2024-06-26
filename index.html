@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./adaptive.css">    
+</head>
+<body class="body">
+    <header>
+        <nav class="nav"></nav>
+    </header>
+    <div class="container">
+        <div class="left_side"></div>
+        <div class="center">
+            <div class="center_content">
+                <div class="center_content_text"></div>
+                <div class="center_content_text"></div>
+                <div class="center_content_text"></div>
+                <div class="center_content_text"></div>
+                <div class="center_content_text"></div>
+                <div class="center_content_text"></div>
+                <div class="center_content_text"></div>
+                <div class="center_content_text"></div>
+                <div class="center_content_text_more"></div>
+            </div>
+            <div class="stroke">
+                <img src="./svg/line.svg">
+            </div>
+            <div class="bottom_txt">
+                <div class="comment_txt">Комментарии <span class="number">()</span>
+                </div>
+                <div class="list">
+                    <button class="list_button">По дате</button>
+                    <div class="list_cont">
+                        <button class="list_item" data-value="date">По дате</button>
+                        <button class="list_item" data-value="count">По количеству оценок</button>
+                        <button class="list_item" data-value="actual">По актуальности</button>
+                        <button class="list_item" data-value="answers">По количеству ответов</button>
+                    </div>
+                </div>
+                <div class="arrow_down"><img src="./svg/arrow.svg"></div>
+                <div class="favorite"><span class="favorite_txt">Избранное</span></div>
+                <div class="favorite_img">
+                    <img src="./svg/favorite.svg">
+                </div>
+            </div>
+            <div class="max">
+                <div class="max_img">
+                  <img src="">
+                </div>
+                <div class="max_com">
+                  <label for="comment_input" class="name_txt max_name"></label>
+                  <span class="max_comment">Макс. 1000 символов</span><br>
+                  <textarea id="comment_input" class="style_txt" placeholder="Введите текст сообщения..."></textarea>
+                  <span class="max_comment"></span>
+                  <div class="com_reply">
+                    <span class="to_reply"></span> || <span class="cancel_reply">Отмена</span>
+                </div>
+                </div>
+                <button type="submit" class="btn_send" id="send_com">Отправить</button>
+            </div>
+            
+            <div class="result">
+                <div class="comment_res" id="comment_res"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
